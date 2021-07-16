@@ -1,0 +1,44 @@
+[
+      {
+        "id": 1,
+        "name": "product 1",
+        "price": "100",
+        "image": "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "12367456"
+      },
+      {
+        "id": 2,
+        "name": "product 2",
+        "price": "120",
+        "image": "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "1232321456"
+      },
+      {
+        "id": 3,
+        "name": "product 3",
+        "price": "150",
+        "image": "https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "1232213456"
+      },
+      {
+        "id": 4,
+        "name": "product 4",
+        "price": "400",
+        "image": "https://images.pexels.com/photos/982865/pexels-photo-982865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "12313123556343"
+      },
+      {
+        "id": 5,
+        "name": "product 5",
+        "price": "500",
+        "image": "https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "1233243243"
+      },
+      {
+        "id": 6,
+        "name": "product 6",
+        "price": "1020",
+        "image": "https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "description": "1233213213456"
+      }
+    ]

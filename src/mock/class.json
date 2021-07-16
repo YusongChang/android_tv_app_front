@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "民法入門",
+        "date": "2021-12-31",
+        "video": [
+            {
+                "videoname": "入門一",
+                "chapter": [
+                    {
+                        "chaptername": "1-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    },
+                    {
+                        "chaptername": "1-2",
+                        "description": "結論",
+                        "time": "00:17:11"
+                    }
+                ]
+            },
+            {
+                "videoname": "入門2",
+                "chapter": [
+                    {
+                        "chaptername": "2-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "法學入門",
+        "date": "2021-12-31",
+        "video": [
+            {
+                "videoname": "入門一",
+                "chapter": [
+                    {
+                        "chaptername": "1-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            },
+            {
+                "videoname": "入門2",
+                "chapter": [
+                    {
+                        "chaptername": "2-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "民法總則",
+        "date": "2021-12-31",
+        "video": [
+            {
+                "videoname": "入門一",
+                "chapter": [
+                    {
+                        "chaptername": "1-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            },
+            {
+                "videoname": "入門2",
+                "chapter": [
+                    {
+                        "chaptername": "2-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "刑法總則",
+        "date": "2021-12-31",
+        "video": [
+            {
+                "videoname": "入門一",
+                "chapter": [
+                    {
+                        "chaptername": "1-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            },
+            {
+                "videoname": "入門2",
+                "chapter": [
+                    {
+                        "chaptername": "2-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "計算機概論",
+        "date": "2021-12-31",
+        "video": [
+            {
+                "videoname": "入門一",
+                "chapter": [
+                    {
+                        "chaptername": "1-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            },
+            {
+                "videoname": "入門2",
+                "chapter": [
+                    {
+                        "chaptername": "2-1",
+                        "description": "總論",
+                        "time": "00:05:11"
+                    }
+                ]
+            }
+        ]
+    }
+]
