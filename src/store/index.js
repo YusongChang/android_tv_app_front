@@ -1,24 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import moduleLogin from './modules/login'
 import moduleUser from './modules/user'
-import moduleOrder from './modules/order'
 import moduleClass from './modules/class'
-
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    login: moduleLogin,
     user: moduleUser,
-    order: moduleOrder,
-    class: moduleClass
+    class: moduleClass,
   },
-  getters: {
-  }
 })

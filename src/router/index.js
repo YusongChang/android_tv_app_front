@@ -1,29 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../views/Login.vue'
-
+// import ClassList from "../views/ClassList";
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'Login',
-    component: Login,
-    beforeEnter: (to, from, next) => {
-      if (localStorage.getItem("user")) {
-        next({ name: 'ClassList' })
-      } else {
-        next()
-      }
-    }
+    path: '/apiTest',
+    name: 'ApiTest',
+    meta: { name: "ApiTest" },
+    component: () => import('../views/ApiTest.vue')
   },
   {
-    path: '/classlist/:id/:video',
-    name: 'Class',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Class.vue'),
+    path: '/',
+    name: 'Home',
+    meta: { name: "Home" },
+    component: () => import('../views/Home.vue'),
     beforeEnter: (to, from, next) => {
-      if (!localStorage.getItem("user")) {
-        next({ name: 'Login' })
+      if (sessionStorage.getItem("token")) {
+        next({ name: 'ClassList' })
       } else {
         next()
       }
@@ -32,23 +26,54 @@ const routes = [
   {
     path: '/classlist',
     name: 'ClassList',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ClassList.vue'),
+    component: () => import('../views/ClassList.vue'),
     beforeEnter: (to, from, next) => {
-      if (!localStorage.getItem("user")) {
-        next({ name: 'Login' })
+      if (!sessionStorage.getItem("token")) {
+        next({ name: 'Home' })
       } else {
+        console.log("ClassList");
         next()
       }
     }
   },
   {
-    path: '/classlist/:id',
-    name: 'ClassDetail',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ClassDetail.vue'),
+    path: '/courseEpisode/:name/:courseSeq/:subjectString',
+    name: 'CourseEpisode',
+    props: true,
+    component: () => import('../views/CourseEpisode.vue'),
     beforeEnter: (to, from, next) => {
-      if (!localStorage.getItem("user")) {
-        next({ name: 'Login' })
+      if (!sessionStorage.getItem("token")) {
+        next({ name: 'Home' })
       } else {
+        console.log('CourseEpisode');
+        next()
+      }
+    }
+  },
+  {
+    path: '/course/:name/:fullName/:courseSeq/:subjString/:courseId/:videoFile/:playTimecode',
+    name: 'Course',
+    props: true,
+    component: () => import('../views/Course.vue'),
+    beforeEnter: (to, from, next) => {
+      if (!sessionStorage.getItem("token")) {
+        next({ name: 'Home' })
+      } else {
+        console.log('Course');
+        next()
+      }
+    }
+  },
+  {
+    path: '/quiz/:lesson_name/:fullName/:courseId/:videoFile/:lesson_hid',
+    props: true,
+    name: 'Quiz',
+    component: () => import('../views/Quiz.vue'),
+    beforeEnter: (to, from, next) => {
+      if (!sessionStorage.getItem("token")) {
+        next({ name: 'Home' })
+      } else {
+        console.log('Quiz');
         next()
       }
     }
@@ -58,9 +83,10 @@ const routes = [
     name: 'User',
     component: () => import(/* webpackChunkName: "about" */ '../views/User.vue'),
     beforeEnter: (to, from, next) => {
-      if (!localStorage.getItem("user")) {
-        next({ name: 'Login' })
+      if (!sessionStorage.getItem("token")) {
+        next({ name: 'Home' })
       } else {
+        console.log('User');
         next()
       }
     }
@@ -75,7 +101,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'hash',
-  base: process.env.BASE_URL,
+  // base: process.env.BASE_URL,
   routes
 })
 

@@ -1,0 +1,11 @@
+.v-dialog {
+    &.v-dialog--persistent {
+        transition-duration: 0s;
+    }
+}
+div.v-dialog__content {
+    user-select: none;
+    .v-dialog {
+        transition-duration: 0s, 0ms;
+    }
+}

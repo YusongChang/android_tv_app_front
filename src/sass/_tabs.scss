@@ -1,0 +1,13 @@
+.v-slide-group__content{
+    &.v-tabs-bar__content{
+        .v-tab{
+            font-size: 15px;
+        }
+    }
+}
+
+.v-slide-group {
+    &.v-tabs-bar{
+        height: 60px;
+    }
+}

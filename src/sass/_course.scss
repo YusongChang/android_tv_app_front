@@ -1,0 +1,134 @@
+.myplayer{
+    #player-content{
+		height: 823.219px; // 避免 <video> 出現後的上下延展效果
+		max-height: 100%;
+        .playpause {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            background-size: contain;
+            background-position: center;
+        }
+        .playpause > .v-icon {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 20%;
+            margin: auto;
+            font-size: 100px;
+        }
+        #control-bar{
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            background-color: black;
+            transition-duration: 1.5s;
+            transition-delay: .3s;
+        }
+
+        #darkScreenCover {
+            display: flex;
+            background-color: black;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0;
+            bottom: 0%;
+            z-index: 1;
+            }
+            #darkScreenCover > button.v-btn--fab.v-size--default {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            width: 90px;
+            height: 90px;
+        }
+        #darkScreenCover > .v-btn--fab.v-size--default .v-icon {
+            font-size: 60px;
+        }
+        #userHid{
+            color: #ffff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            font-size: 35px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            opacity: 0.5;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        #leftTime{
+            color: #ffff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+            margin-right: 10px;
+            font-size: 35px;
+            width: 300px;
+            height: 50px;
+            text-align: right;
+            opacity: 0.5;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    }
+
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+
+#sidebar-video-stamp{
+    .v-list-item{
+        .v-list-item__title{
+            text-overflow: unset;
+            white-space:unset;
+            font-size: $fontSize_em_1;
+        }
+    }
+}
+
+#score-circle{
+    .v-progress-circular__info{
+    }
+}
+
+.control-btn-leave {
+opacity: 1;
+}
+.control-btn-active {
+transition: opacity 0.5s;
+}
+.control-btn-to {
+opacity: 0;
+}
+.control-btn-enter {
+opacity: 0;
+}
+.control-btn-enter-active {
+transition: opacity 0.5s;
+}
+.control-btn-enter-to {
+opacity: 1;
+}

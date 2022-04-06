@@ -1,0 +1,360 @@
+.myplayer{
+  height: auto;
+  #player-content{
+      #videoPlayer{
+          width: 100%;
+          height: 100%;
+          .vjs-wartermark-content{
+              position: absolute;
+              top: 0%;
+              width: 100%;
+              height: 100%;
+              pointer-events: none;
+              font-size: 18pt;
+              color: #ffcbcb;
+              opacity: .3;
+              .vjs-wartermark-text{
+                  position: absolute;
+                  top:0%;
+                  padding:20px;
+              }
+              .vjs-wartermark-time{
+                  position: absolute;
+                  padding:20px;
+                  top:0%;
+                  right: 0%;
+              }
+          }         
+      }
+  }
+}
+
+.video-js{
+  .vjs-big-play-button{
+    border-radius: 50%;
+    border-width: 2px;
+    height: 3em;
+    width: 3em;
+    .vjs-icon-placeholder{
+      &:before{
+        font-size: 2em;
+        line-height: 1.45em;
+      }
+    }
+    
+  }
+  .vjs-control-bar{
+    height: 40px;
+  }
+  .vjs-time-control{
+    font-size: 2em;
+    line-height: 2.1em;
+  }
+  .vjs-current-time,
+  .vjs-duration
+  {
+    display: flex;
+  }
+  .vjs-no-flex  
+  {
+    .vjs-current-time, 
+    .vjs-duration{
+      display: flex;
+    }
+  }
+  .vjs-time-divider{
+    display: flex;
+  }
+  .vjs-current-time{
+    padding-right: 0;
+  }
+  .vjs-duration{
+    padding-left: 0;
+  }
+  .vjs-custom-control-spacer{
+    display: flex;
+    flex: 1 1 auto;
+  }
+  .vjs-remaining-time{
+    display: none;
+  }
+  .vjs-progress-control{
+    position: absolute;
+    top: -1.5em;
+    right: 0%;
+    width: 100%;
+    height: 1.5em;
+    .vjs-slider{
+      &.vjs-slider-horizontal{
+        margin: 0;
+        height: 100%;
+      }
+    }
+    &:hover{
+      top: -2.5em;
+      height: 2.5em;
+    }    
+  }
+  .vjs-play-progress{
+    &:before{
+      content: '';
+    }
+  }
+  .vjs-picture-in-picture-control{
+    display: none;
+  }
+  .vjs-volume-bar{
+    margin: 2.2em 0.45em;
+  }
+ .vjs-volume-level:before{
+    font-size: 1.7em;
+  }
+  .vjs-volume-panel{
+    &.vjs-hover{
+      &.vjs-volume-control,
+        ~ .vjs-volume-control{
+        &.vjs-volume-horizontal{
+          height: 100%;
+        }
+      }
+    }
+  } 
+} 
+.vjs-slider-horizontal .vjs-volume-level{ 
+  height: .8em;
+}
+
+.vjs-playback-rate{
+  &.vjs-menu-button{
+   width: 5em;
+  }
+  .vjs-playback-rate-value{
+    font-size: 2em;
+  }
+ .vjs-menu{
+   width: 8em;
+ }
+}
+.vjs-menu-item-text{
+  font-size: 1.7em;
+ }
+.vjs-icon-cog:before{
+  font-size: 2.5em;
+}
+.vjs-paused{
+  .vjs-big-play-button{
+    display: block;
+  }
+}
+.vjs-button {
+  .vjs-icon-placeholder:before{
+    font-size: 3em;
+    line-height: 1.35;
+  }
+}
+
+// video::-webkit-media-controls {
+//     display: none !important;
+// }
+// video::-webkit-media-controls-enclosure {
+//     display: none !important;
+// }
+
+/* Change all text and icon colors in the player. */
+// .vjs-matrix.video-js {
+//   color: #00ff00;
+// }
+
+/* Change the border of the big play button. */
+// .vjs-matrix .vjs-big-play-button {
+//   border-color: #00ff00;
+//   top:0;
+//   left:0;
+//   right:0;
+//   bottom:0;
+//   margin: auto;
+// }
+
+/* Change the color of various "bars". */
+// .vjs-matrix .vjs-volume-level,
+// .vjs-matrix .vjs-play-progress,
+// .vjs-matrix .vjs-slider-bar {
+//   background: #00ff00;
+// }
+
+/* loading animation*/
+#floatingCirclesG{
+	position:relative;
+	width:70px;
+	height:70px;
+	margin:auto;
+	transform:scale(0.6);
+		-o-transform:scale(0.6);
+		-ms-transform:scale(0.6);
+		-webkit-transform:scale(0.6);
+		-moz-transform:scale(0.6);
+}
+
+.f_circleG{
+	position:absolute;
+	background-color:rgb(255,255,255);
+	height:13px;
+	width:13px;
+	border-radius:7px;
+		-o-border-radius:7px;
+		-ms-border-radius:7px;
+		-webkit-border-radius:7px;
+		-moz-border-radius:7px;
+	animation-name:f_fadeG;
+		-o-animation-name:f_fadeG;
+		-ms-animation-name:f_fadeG;
+		-webkit-animation-name:f_fadeG;
+		-moz-animation-name:f_fadeG;
+	animation-duration:1.2s;
+		-o-animation-duration:1.2s;
+		-ms-animation-duration:1.2s;
+		-webkit-animation-duration:1.2s;
+		-moz-animation-duration:1.2s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+}
+
+#frotateG_01{
+	left:0;
+	top:29px;
+	animation-delay:0.45s;
+		-o-animation-delay:0.45s;
+		-ms-animation-delay:0.45s;
+		-webkit-animation-delay:0.45s;
+		-moz-animation-delay:0.45s;
+}
+
+#frotateG_02{
+	left:8px;
+	top:8px;
+	animation-delay:0.6s;
+		-o-animation-delay:0.6s;
+		-ms-animation-delay:0.6s;
+		-webkit-animation-delay:0.6s;
+		-moz-animation-delay:0.6s;
+}
+
+#frotateG_03{
+	left:29px;
+	top:0;
+	animation-delay:0.75s;
+		-o-animation-delay:0.75s;
+		-ms-animation-delay:0.75s;
+		-webkit-animation-delay:0.75s;
+		-moz-animation-delay:0.75s;
+}
+
+#frotateG_04{
+	right:8px;
+	top:8px;
+	animation-delay:0.9s;
+		-o-animation-delay:0.9s;
+		-ms-animation-delay:0.9s;
+		-webkit-animation-delay:0.9s;
+		-moz-animation-delay:0.9s;
+}
+
+#frotateG_05{
+	right:0;
+	top:29px;
+	animation-delay:1.05s;
+		-o-animation-delay:1.05s;
+		-ms-animation-delay:1.05s;
+		-webkit-animation-delay:1.05s;
+		-moz-animation-delay:1.05s;
+}
+
+#frotateG_06{
+	right:8px;
+	bottom:8px;
+	animation-delay:1.2s;
+		-o-animation-delay:1.2s;
+		-ms-animation-delay:1.2s;
+		-webkit-animation-delay:1.2s;
+		-moz-animation-delay:1.2s;
+}
+
+#frotateG_07{
+	left:29px;
+	bottom:0;
+	animation-delay:1.35s;
+		-o-animation-delay:1.35s;
+		-ms-animation-delay:1.35s;
+		-webkit-animation-delay:1.35s;
+		-moz-animation-delay:1.35s;
+}
+
+#frotateG_08{
+	left:8px;
+	bottom:8px;
+	animation-delay:1.5s;
+		-o-animation-delay:1.5s;
+		-ms-animation-delay:1.5s;
+		-webkit-animation-delay:1.5s;
+		-moz-animation-delay:1.5s;
+}
+
+
+
+@keyframes f_fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgba(255,255,255);
+	}
+}
+
+@-o-keyframes f_fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-ms-keyframes f_fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-webkit-keyframes f_fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-moz-keyframes f_fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
